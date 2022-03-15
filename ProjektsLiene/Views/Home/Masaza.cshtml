@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Masāža";
+}
+
+
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/masaza.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Questrial&family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>>
+<body>
+    <div class="hero-image">
+        <h1 class="hero-text">MASĀŽA</h1>
+    </div>
+    <div id="masaza-big">
+        <div class="masaza-1">
+                <h2> Pilna ķermeņa <br /> masāža </h2>
+                <h5>Procedūras ilgums 1,5 h</h5>
+                <h5> 55 Eur</h5>
+                <a class="btn" asp-area="" asp-controller="Home" asp-action="Kontakti">Pieteikties</a>
+            </div>
+            <div class="masaza-2">
+                <h2> Relaksējoša muguras masāža </h2>
+                <h5>Procedūras ilgums 0,5 h</h5>
+                <h5> 25 Eur</h5>
+                <a class="btn" asp-area="" asp-controller="Home" asp-action="Kontakti">Pieteikties</a>
+            </div>
+            <div class="masaza-3">
+                <h2> Muguras un roku masāža </h2>
+                <h5>Procedūras ilgums 1 h</h5>
+                <h5> 35 Eur</h5>
+                <a class="btn" asp-area="" asp-controller="Home" asp-action="Kontakti">Pieteikties</a>
+            </div>
+            <div class="masaza-4">
+                <h2> Muguras un kāju masāža </h2>
+                <h5>Procedūras ilgums 1 h</h5>
+                <h5> 40 Eur</h5>
+                <a class="btn" asp-area="" asp-controller="Home" asp-action="Kontakti">Pieteikties</a>
+            </div>
+            <div class="masaza-5">
+                <h2> Sejas un galvas <br /> masāža </h2>
+                <h5>Procedūras ilgums 0,5 h</h5>
+                <h5> 25 Eur</h5>
+                <a class="btn" asp-area="" asp-controller="Home" asp-action="Kontakti">Pieteikties</a>
+            </div>
+            <div class="masaza-6">
+                <h2> Atslābinoša masāža grūtniecēm </h2>
+                <h5>Procedūras ilgums 1 h</h5>
+                <h5>50 Eur</h5>
+                <a class="btn" asp-area="" asp-controller="Home" asp-action="Kontakti">Pieteikties</a>
+            </div>
+    </div>
+<br />
+<br />
+<!-- Atsauksmju slidebar -->
+    <div id="slide">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+             <p class="author">- Thomas A. Edison</p> 
+         </div>
+        <div class="mySlides fade">
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+             <p class="author">- Thomas A. Edison</p> 
+         </div>
+         <div class="mySlides fade">
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+             <p class="author">- Thomas A. Edison</p> 
+         </div>
+         <div class="mySlides fade">
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+             <p class="author">- Thomas A. Edison</p> 
+         </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    </div>
+      <br>
+      <div style="text-align:center"> 
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <!-- Atsauksmju slidebar beigas-->
+</body>
+</html>

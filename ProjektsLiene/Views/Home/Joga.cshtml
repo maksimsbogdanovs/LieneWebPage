@@ -1,0 +1,100 @@
+﻿@{
+    ViewData["Title"] = "Joga";
+}
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/joga.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Questrial&family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero-image">
+        <h1 class="hero-text">JOGA</h1>
+    </div>
+        <div class="big">
+            <div class="joga-box1">
+                    <h2> Jogas nodarbība grupā </h2>
+                    <h5> 15 Eur</h5>
+                    <a class="btn" asp-area="" asp-controller="Home" asp-action="Kontakti">Pieteikties</a>
+            </div>
+            <div class="joga-box2">
+                    <h2> Privāta jogas nodarbība </h2>
+                    <h5> 40 Eur</h5>
+                    <a class="btn" asp-area="" asp-controller="Home" asp-action="Kontakti">Pieteikties</a>
+                </div>
+            <div class="joga-box3">
+                    <h2> Korporatīvā jogas nodarbība birojā </h2>
+                    <h5> no 50 Eur</h5>
+                    <a class="btn" asp-area="" asp-controller="Home" asp-action="Kontakti">Pieteikties</a>
+            </div>
+        </div>
+<br />
+<br />
+<br />
+<br />
+<!-- Atsauksmju slidebar -->
+    <div id="slide">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+             <p class="author">- Thomas A. Edison</p> 
+         </div>
+        <div class="mySlides fade">
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+             <p class="author">- Thomas A. Edison</p> 
+         </div>
+         <div class="mySlides fade">
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+             <p class="author">- Thomas A. Edison</p> 
+         </div>
+         <div class="mySlides fade">
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+             <p class="author">- Thomas A. Edison</p> 
+         </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    </div>
+      <br>
+      <div style="text-align:center"> 
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <!-- Atsauksmju slidebar beigas-->
+</body>
+</html>
+
+@*<div class="joga-big">
+    <div class="joga-box1">
+        <div class="joga-g">
+            <h2> Jogas nodarbība grupā </h2>
+            <img class="joga-bildes" src="~/lib/Images/Masaza/Muguras_masaza.jpg" />
+            <p> 15 Eur</p>
+            <a class="btn" asp-area="" asp-controller="Home" asp-action="Kontakti">Pieteikties</a>
+        </div>
+    </div>
+    <div class="joga-box2">
+        <div class="joga-p">
+            <h2> Privāta jogas nodarbība </h2>
+            <img class="joga-bildes" src="~/lib/Images/Masaza/Muguras_masaza.jpg" />
+            <p> 40 Eur</p>
+            <a class="btn" asp-area="" asp-controller="Home" asp-action="Kontakti">Pieteikties</a>
+        </div>
+    </div>
+    <div class="joga-box3">
+        <div class="joga-b">
+            <h2> Korporatīvā jogas nodarbība birojā </h2>
+            <img class="joga-bildes" src="~/lib/Images/Masaza/Muguras_masaza.jpg" />
+            <p> Cena sākot no 50 Eur</p>
+            <a class="btn" asp-area="" asp-controller="Home" asp-action="Kontakti">Pieteikties</a>
+        </div>
+    </div>
+</div>*@
+
+
+
+
