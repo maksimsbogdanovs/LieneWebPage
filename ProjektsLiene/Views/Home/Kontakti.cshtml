@@ -1,6 +1,7 @@
 ﻿@model ProjektsLiene.Models.SendMailToModel
 
 
+
 @{
     ViewData["Title"] = "Kontakti";
 }
@@ -11,6 +12,13 @@
     <link rel="stylesheet" href="~/css/kontakti.css" />
 </head>
 <body>
+    @if (TempData["AlertMessage"] != null)
+    {
+    <div class="alert alert-sucsess">
+        @TempData["AlertMessage"]
+    </div> 
+    }
+    
     <div class="kontakti-wrap">
         <div class="kontakti-in">
             <h1>Kontaktinformācija</h1>
@@ -39,17 +47,6 @@
     </div>
     <br />
     <br />
-
-    <div class="izsutne">
-            <form method="post">
-                <h4>Pieraksties jaunumiem</h4>
-                <div class="email-box">
-                    <i class="far fa-envelope"></i>
-                    <input type="email" class="tbox" name="" value="" placeholder="Ievadi savu epastu"/>
-                    <button class="btn" type="button" name="button">Pierakstīties</button>
-                </div>
-            </form>
-        </div>
 </body>
 </html>
 

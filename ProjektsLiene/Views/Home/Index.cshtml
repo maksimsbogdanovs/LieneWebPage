@@ -1,4 +1,6 @@
-﻿@{
+﻿@model ProjektsLiene.Models.SendSubscribers
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -6,8 +8,24 @@
     <head>
         <script src="https://kit.fontawesome.com/047ba35f7e.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="~/css/index.css"/>
+        <link rel="stylesheet" href="~/css/kontakti.css" />
     </head>
     <body>
-       
+    @if (TempData["AlertMessage"] != null)
+    {
+    <div class="alert alert-sucsess">
+        @TempData["AlertMessage"]
+    </div> 
+    }
+       <div class="izsutne">
+            <form method="post">
+                <h4>Pieraksties jaunumiem</h4>
+                <div class="email-box">
+                    <i class="far fa-envelope"></i>
+                    <input type="email" asp-for="@Model.Email" class="tbox" value="" placeholder="Ievadi savu epastu"/>
+                    <input type="submit" value="Pierakstīties" class="btn">
+                </div>
+            </form>
+        </div>
     </body>
 </html>

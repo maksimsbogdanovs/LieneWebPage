@@ -49,12 +49,12 @@ namespace ProjektsLiene.Controllers
         public IActionResult Kontakti(SendMailToModel sendMailTo)
         {
             if (!ModelState.IsValid) return View();
-
+            TempData["AlertMessage"] = "Ziņa nosūtīta!";
             try
             {
                 MailMessage mail = new MailMessage();
 
-                //mail.From = new MailAddress("Kontaktforma@mindfulliene.com");
+                mail.From = new MailAddress("Kontaktforma@mindfulliene.com", "MindfulLiene");
 
                 mail.To.Add("maksims.bogdanovs@gmail.com");
 
@@ -89,7 +89,51 @@ namespace ProjektsLiene.Controllers
             return View();
         }
 
-        
+
+        [HttpPost]
+        public IActionResult Index(SendSubscribers sendSubscribers)
+        {
+            if (!ModelState.IsValid) return View();
+            TempData["AlertMessage"] = "Jūs esat veiksmīgi pierakstījušies jaunumiem";
+            try
+            {
+                MailMessage mail = new MailMessage();
+
+                mail.From = new MailAddress("Kontaktforma@mindfulliene.com", "MindfulLiene");
+
+                mail.To.Add("maksims.bogdanovs@gmail.com");
+
+                mail.Subject = "Jauns pieraksts jaunumu saņemšanai";
+
+                mail.IsBodyHtml = true;
+
+                string content = "Epats: " + sendSubscribers.Email;
+                content += "<br/> Šis cilvēks grib pievienoties jaunumu saņemšanai";
+                
+
+                mail.Body = content;
+
+
+                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com");
+
+                NetworkCredential networkCredential = new NetworkCredential("maksims.bogdanovs@gmail.com", "plshozmuocoavkrb");
+                smtpClient.UseDefaultCredentials = false;
+                smtpClient.Credentials = networkCredential;
+                smtpClient.Port = 587;
+                smtpClient.EnableSsl = true;
+                smtpClient.Send(mail);
+
+                ModelState.Clear();
+
+            }
+            catch (Exception ex)
+            {
+
+                ViewBag.Message = ex.Message.ToString();
+            }
+            return View();
+        }
+
 
         public IActionResult Privacy()
         {
