@@ -107,7 +107,7 @@ namespace ProjektsLiene.Controllers
 
                 mail.IsBodyHtml = true;
 
-                string content = "Epats: " + sendSubscribers.Email;
+                string content = "Epasts: " + sendSubscribers.Email;
                 content += "<br/> Šis cilvēks grib pievienoties jaunumu saņemšanai";
                 
 
