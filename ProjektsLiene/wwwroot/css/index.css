@@ -1,3 +1,62 @@
 ﻿body {
 }
 
+/* Subscribe */
+.izsutne {
+    text-align: center;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    padding: 10px;
+    position:relative;
+    left:90%;
+    bottom:90%;
+}
+
+.izsutne h4 {
+    margin: 20px;
+    font-size: large;
+    text-align: center;
+}
+
+.izsutne p {
+    max-width: 200px;
+    margin: 40px auto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.email-box {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.email-box i {
+    background-color: floralwhite;
+    width: 40px;
+    line-height: 40px;
+}
+
+.tbox, .btn {
+    border: none;
+    outline: none;
+}
+
+.tbox {
+    width: 0px;
+    transition: 0.6s;
+}
+
+.email-box:hover > .tbox, .tbox:focus {
+    width: 260px;
+    padding: 0 10px;
+}
+
+.btn {
+    background: floralwhite;
+    padding: 0 10px;
+}
+

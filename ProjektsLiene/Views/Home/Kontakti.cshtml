@@ -14,8 +14,11 @@
 <body>
     @if (TempData["AlertMessage"] != null)
     {
-    <div class="alert alert-sucsess">
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
         @TempData["AlertMessage"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
     </div> 
     }
     
@@ -45,8 +48,6 @@
                 340880!5m2!1slv!2slv" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
-    <br />
-    <br />
 </body>
 </html>
 
