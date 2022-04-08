@@ -1,6 +1,9 @@
 ﻿body {
 }
-
+.logo{
+    width:200px;
+    height:auto;
+}
 /* Subscribe */
 .izsutne {
     text-align: center;

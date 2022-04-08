@@ -118,5 +118,11 @@ color: green;
 text-decoration: underline;
 }
 
-
+.logo {
+    width: 200px;
+    height: auto;
+    position:relative;
+    top:50px;
+    left:95%;
+}
 
