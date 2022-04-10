@@ -94,7 +94,7 @@ namespace ProjektsLiene.Controllers
         public IActionResult Index(SendSubscribers sendSubscribers)
         {
             if (!ModelState.IsValid) return View();
-            TempData["AlertMessage"] = "Jūs esat veiksmīgi pierakstījušies jaunumiem";
+            TempData["AlertMessage"] = "Tu esi veiksmīgi pierakstījies jaunumiem";
             try
             {
                 MailMessage mail = new MailMessage();
