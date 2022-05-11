@@ -1,4 +1,5 @@
 ﻿body {
+    font-family: 'Overpass', sans-serif;
 }
 
 
@@ -20,68 +21,89 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: floralwhite;
-    font-size: 75px;
+    font-size: 10vw;
 }
 
-
 .joga-box1 {
-    display: inline-grid;
-    width: 30%;
-    padding: 10px;
-    margin: 10px;
-    margin-left: 30px;
-    margin-top: 150px;
+    display: flex;
+    position: relative;
+    width: 55vw;
+    height: 10vw;
+    padding: 5px;
+    margin: auto;
+    margin-top: 50px;
     border-width: 1px;
     border-color: darkgrey;
     border-style: solid;
-    font-family: 'Questrial', sans-serif;
-    text-align: center;
+    text-align: left;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vw;
 }
 
 .joga-box2 {
-    display: inline-grid;
-    width: 30%;
+    display: flex;
+    position: relative;
+    width: 55vw;
+    height: 10vw;
     padding: 10px;
-    margin: 10px;
-    margin-top: 150px;
+    margin: auto;
+    margin-top: 30px;
     border-width: 1px;
     border-color: darkgrey;
     border-style: solid;
-    font-family: 'Questrial', sans-serif;
     text-align: center;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vw;
 }
 
 .joga-box3 {
-    display: inline-grid;
-    width: 30%;
+    display: flex;
+    position: relative;
+    width: 55vw;
+    height: 10vw;
+    position: relative;
     padding: 10px;
-    margin: 10px;
-    margin-top: 150px;
+    margin: auto;
+    margin-top: 30px;
     border-width: 1px;
     border-color: darkgrey;
     border-style: solid;
-    font-family: 'Questrial', sans-serif;
     text-align: center;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-.joga-box1 h1, .joga-box2 h1, .joga-box3 h1 {
-    margin: 10px 10px 10px 1px;
-}
+    .joga-box1 h2, .joga-box2 h2, .joga-box3 h2 {
+        /*margin: 5px 75px 5px;*/
+        display: flex;
+        position: relative;
+        font-size: 2vw;
+    }
 
-.joga-box1 h5, .joga-box2 h5, .joga-box3 h5 {
-    margin: 20px 20px 10px 1px;
-}
+    .joga-box1 h5, .joga-box2 h5, .joga-box3 h5 {
+/*        margin: 5px 50px 5px;*/
+        display: flex;
+        position: relative;
+        font-size: 1.5vw;
+    }
 
 
 .btn {
-    background-color: whitesmoke;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    margin: 10px 10px 10px 1px;
+    display: flex;
+    position: relative;
+    width: fit-content;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    margin: 1px 20px 1px 1px;
     border-radius: 5px;
     color: whitesmoke;
+    display: inline-block;
+    cursor: pointer;
 }
 
 /* Atsauksmju slidebar */
