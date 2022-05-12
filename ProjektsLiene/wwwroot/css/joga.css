@@ -38,7 +38,7 @@
     text-align: left;
     border-radius: 10px;
     align-items: center;
-    justify-content: center;
+    justify-content:space-evenly;
     font-size: 10vw;
 }
 
@@ -56,7 +56,7 @@
     text-align: center;
     border-radius: 10px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     font-size: 10vw;
 }
 
@@ -75,8 +75,8 @@
     text-align: center;
     border-radius: 10px;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: space-evenly;
+    font-size: 10vw;
 }
 
     .joga-box1 h2, .joga-box2 h2, .joga-box3 h2 {

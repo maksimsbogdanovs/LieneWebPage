@@ -11,13 +11,11 @@
     background-size: cover;
     position: relative;
     border-radius: 10px;
-    font: 'Overpass',Black 900;
 }
 
 .hero-text {
-    font-size: 200px;
     text-align: center;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -25,104 +23,147 @@
     font-size: 10vw;
 }
 
+.nosaukums{
+    display:block;
+}
 
 .masaza-1 {
-    display: inline-grid;
-    width: 30%;
+    display: flex;
+    position: relative;
+    width: 55vw;
+    height: 10vw;
+    position: relative;
     padding: 10px;
-    margin: 10px;
-    margin-top: 50px;
+    margin: auto;
+    margin-top: 30px;
     border-width: 1px;
     border-color: darkgrey;
     border-style: solid;
     text-align: center;
     border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 10vw;
 }
 
 .masaza-2 {
-    display: inline-grid;
-    width: 30%;
+    display: flex;
+    position: relative;
+    width: 55vw;
+    height: 10vw;
+    position: relative;
     padding: 10px;
-    margin: 10px;
-    margin-left: 30px;
-    margin-top: 50px;
+    margin: auto;
+    margin-top: 30px;
     border-width: 1px;
     border-color: darkgrey;
     border-style: solid;
     text-align: center;
     border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 10vw;
 }
 
 .masaza-3 {
-    display: inline-grid;
-    width: 30%;
+    display: flex;
+    position: relative;
+    width: 55vw;
+    height: 10vw;
+    position: relative;
     padding: 10px;
-    margin: 10px;
-    margin-left: 30px;
-    margin-top: 50px;
+    margin: auto;
+    margin-top: 30px;
     border-width: 1px;
     border-color: darkgrey;
     border-style: solid;
     text-align: center;
     border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 10vw;
 }
 
 .masaza-4 {
-    display: inline-grid;
-    width: 30%;
+    display: flex;
+    position: relative;
+    width: 55vw;
+    height: 10vw;
+    position: relative;
     padding: 10px;
-    margin: 10px;
-    margin-top: 50px;
+    margin: auto;
+    margin-top: 30px;
     border-width: 1px;
     border-color: darkgrey;
     border-style: solid;
     text-align: center;
     border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 10vw;
 }
 
 .masaza-5 {
-    display: inline-grid;
-    width: 30%;
+    display: flex;
+    position: relative;
+    width: 55vw;
+    height: 10vw;
+    position: relative;
     padding: 10px;
-    margin: 10px;
-    margin-left: 30px;
-    margin-top: 50px;
+    margin: auto;
+    margin-top: 30px;
     border-width: 1px;
     border-color: darkgrey;
     border-style: solid;
     text-align: center;
     border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 10vw;
 }
 
 .masaza-6 {
-    display: inline-grid;
-    width: 30%;
+    display: flex;
+    position: relative;
+    width: 55vw;
+    height: 10vw;
+    position: relative;
     padding: 10px;
-    margin: 10px;
-    margin-left: 30px;
-    margin-top: 50px;
+    margin: auto;
+    margin-top: 30px;
     border-width: 1px;
     border-color: darkgrey;
     border-style: solid;
     text-align: center;
     border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 10vw;
 }
 
 
-.masaza-1 h1, .masaza-2 h1, .masaza-3 h1, .masaza-4 h1, .masaza-5 h1, .masaza-6 h1 {
-    margin: 10px 10px 10px 1px;
-}
+    .masaza-1 h2, .masaza-2 h2, .masaza-3 h2, .masaza-4 h2, .masaza-5 h2, .masaza-6 h2 {
+        display: flex;
+        position: relative;
+        font-size: 2vw;
+    }
 
-.masaza-1 h5, .masaza-2 h5, .masaza-3 h5, .masaza-4 h5, .masaza-5 h5, .masaza-6 h5 {
-    margin: 10px 10px 10px 1px;
-}
+    .masaza-1 h5, .masaza-2 h5, .masaza-3 h5, .masaza-4 h5, .masaza-5 h5, .masaza-6 h5 {
+        display: flex;
+        position: relative;
+        font-size: 1.5vw;
+    }
 
 .btn {
-    background-color: whitesmoke;
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    margin: 10px 10px 10px 1px;
+    display: flex;
+    position: relative;
+    width: fit-content;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    margin: 1px 20px 1px 1px;
     border-radius: 5px;
     color: whitesmoke;
+    display: inline-block;
+    cursor: pointer;
 }
 
 /* Atsauksmju slidebar */
