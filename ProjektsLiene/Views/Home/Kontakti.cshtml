@@ -18,43 +18,45 @@
 <body>
     @if (TempData["AlertMessage"] != null)
     {
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        @TempData["AlertMessage"]
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div> 
-    }
-    
-    <div class="kontakti-wrap">
-        <div class="kontakti-in">
-            <h1>Kontaktinformācija</h1>
-            <h2> <i class="far fa-envelope"></i> E-pasts: <a class="links" href="mailto: liene.krauze@gmail.com" target="_blank">liene.krauze@gmail.com</a></h2>
-            <h2> <i class="fas fa-mobile-alt"></i> Tālrunis saziņai: + 371 27850524</h2>
-            <h2> <i class="fab fa-instagram"></i> Instagram: <a class="links" href="https://www.instagram.com/mindfulliene/" target="_blank">&#64;mindfulliene</a></h2>
-            <h2> <i class="fas fa-map-marker-alt"></i> Adrese: Baznīcas iela 13, Rīga</h2>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["AlertMessage"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
-        <div class="kontakti-in">
+    }
+    <div class="contact-wrap">
+        <div class="contact-in">
             <h1>Pieteikt pakalpojumu</h1>
             <form method="post">
-                <input type"text" asp-for="@Model.Name" placeholder="Vārds" class="kontakti-in-input" />
-                <input type"text" asp-for="@Model.Phone" placeholder="Kontakttālrunis" class="kontakti-in-input" />
-                <input type"text" asp-for="@Model.Subject" placeholder="Temats" class="kontakti-in-input" />
-                <textarea asp-for="@Model.Message" placeholder="Ziņa" class="kontakti-in-textarea"></textarea>
-                <span class="text-danger" asp-validation-for="@Model.Message"></span>
-                <input type="submit" value="NOSŪTĪT" class="kontakti-in-btn" />
-            </form>
+                        <input type"text" asp-for="@Model.Name" placeholder="Vārds" class="contact-in-input" />
+                        <input type"text" asp-for="@Model.Phone" placeholder="Kontakttālrunis" class="contact-in-input" />
+                        <input type"text" asp-for="@Model.Subject" placeholder="Temats" class="contact-in-input" />
+                        <textarea asp-for="@Model.Message" placeholder="Ziņa" class="contact-in-textarea"></textarea>
+                        <span class="text-danger" asp-validation-for="@Model.Message"></span>
+                        <input type="submit" value="NOSŪTĪT" class="contact-in-btn" />
+                    </form>
+            </div>
+        <div class="contact-in">
+            <h1>Kontaktinformācija</h1>
+            <h2> <i class="far fa-envelope"></i> E-pasts: <a class="links" href="mailto:liene.krauze@gmail.com" target="_blank"> liene.krauze@gmail.com</a></h2>
+            <h2> <i class="fas fa-mobile-alt"></i> Tālrunis saziņai: + 371 27850524</h2>
+            <h2> <i class="fab fa-instagram"></i> Instagram: <a class="links" href="https://www.instagram.com/mindfulliene/" target="_blank">&#64;mindfulliene</a></h2>
+            <h2> <i class="fas fa-map-marker-alt"></i> Adrese: Baznīcas iela 13, Rīga </h2>
+            
         </div>
-        <div class="kontakti-in">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.545893371588!2d24.116289451798412!3d56.
-                95658108079862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfce89e5bccf%3A0x24749f4975048f8!
-                2sBazn%C4%ABcas%20iela%2013%2C%20Centra%20rajons%2C%20R%C4%ABga%2C%20LV-1010!5e0!3m2!1slv!2slv!4v1643810
-                340880!5m2!1slv!2slv" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+        <div class="contact-in">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.545893371588!2d24.116289451798412!3d56.
+                    95658108079862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfce89e5bccf%3A0x24749f4975048f8!
+                    2sBazn%C4%ABcas%20iela%2013%2C%20Centra%20rajons%2C%20R%C4%ABga%2C%20LV-1010!5e0!3m2!1slv!2slv!4v1643810
+                    340880!5m2!1slv!2slv" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        
     </div>
-    <img class="logo" src="/lib/Images/Logo/default-monochrome.svg" alt"minfuelness logo"/>
+
 </body>
 </html>
+
 
 
 

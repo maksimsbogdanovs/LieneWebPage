@@ -5,7 +5,8 @@
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../lib/Images/Masaza/massage.JPG);
     height: 300px;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,145 +26,134 @@
 
 .nosaukums{
     display:block;
+    margin:2px;
 }
 
 .masaza-1 {
     display: flex;
     position: relative;
-    width: 55vw;
-    height: 10vw;
-    position: relative;
-    padding: 10px;
+    width: 90%;
+    height: 140px;
+    padding: 5px;
     margin: auto;
-    margin-top: 30px;
-    border-width: 1px;
-    border-color: darkgrey;
+    margin-top: 50px;
+    border-width: 2px;
+    border-color: #9f8484;
     border-style: solid;
-    text-align: center;
+    text-align: left;
     border-radius: 10px;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 10vw;
 }
 
 .masaza-2 {
     display: flex;
     position: relative;
-    width: 55vw;
-    height: 10vw;
-    position: relative;
-    padding: 10px;
+    width: 90%;
+    height: 140px;
+    padding: 5px;
     margin: auto;
-    margin-top: 30px;
-    border-width: 1px;
-    border-color: darkgrey;
+    margin-top: 50px;
+    border-width: 2px;
+    border-color: #9f8484;
     border-style: solid;
-    text-align: center;
+    text-align: left;
     border-radius: 10px;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 10vw;
 }
 
 .masaza-3 {
     display: flex;
     position: relative;
-    width: 55vw;
-    height: 10vw;
-    position: relative;
-    padding: 10px;
+    width: 90%;
+    height: 140px;
+    padding: 5px;
     margin: auto;
-    margin-top: 30px;
-    border-width: 1px;
-    border-color: darkgrey;
+    margin-top: 50px;
+    border-width: 2px;
+    border-color: #9f8484;
     border-style: solid;
-    text-align: center;
+    text-align: left;
     border-radius: 10px;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 10vw;
 }
 
 .masaza-4 {
     display: flex;
     position: relative;
-    width: 55vw;
-    height: 10vw;
-    position: relative;
-    padding: 10px;
+    width: 90%;
+    height: 140px;
+    padding: 5px;
     margin: auto;
-    margin-top: 30px;
-    border-width: 1px;
-    border-color: darkgrey;
+    margin-top: 50px;
+    border-width: 2px;
+    border-color: #9f8484;
     border-style: solid;
-    text-align: center;
+    text-align: left;
     border-radius: 10px;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 10vw;
 }
 
 .masaza-5 {
     display: flex;
     position: relative;
-    width: 55vw;
-    height: 10vw;
-    position: relative;
-    padding: 10px;
+    width: 90%;
+    height: 140px;
+    padding: 5px;
     margin: auto;
-    margin-top: 30px;
-    border-width: 1px;
-    border-color: darkgrey;
+    margin-top: 50px;
+    border-width: 2px;
+    border-color: #9f8484;
     border-style: solid;
-    text-align: center;
+    text-align: left;
     border-radius: 10px;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 10vw;
 }
 
 .masaza-6 {
     display: flex;
     position: relative;
-    width: 55vw;
-    height: 10vw;
-    position: relative;
-    padding: 10px;
+    width: 90%;
+    height: 140px;
+    padding: 5px;
     margin: auto;
-    margin-top: 30px;
-    border-width: 1px;
-    border-color: darkgrey;
+    margin-top: 50px;
+    border-width: 2px;
+    border-color: #9f8484;
     border-style: solid;
-    text-align: center;
+    text-align: left;
     border-radius: 10px;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 10vw;
 }
 
 
     .masaza-1 h2, .masaza-2 h2, .masaza-3 h2, .masaza-4 h2, .masaza-5 h2, .masaza-6 h2 {
         display: flex;
         position: relative;
-        font-size: 2vw;
+        font-size: 20px;
     }
 
     .masaza-1 h5, .masaza-2 h5, .masaza-3 h5, .masaza-4 h5, .masaza-5 h5, .masaza-6 h5 {
         display: flex;
         position: relative;
-        font-size: 1.5vw;
+        font-size: 20px;
     }
 
 .btn {
     display: flex;
     position: relative;
     width: fit-content;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
     margin: 1px 20px 1px 1px;
     border-radius: 5px;
-    color: whitesmoke;
+    border-color: #9f8484;
     display: inline-block;
     cursor: pointer;
+    border-width: 1px;
 }
 
 /* Atsauksmju slidebar */

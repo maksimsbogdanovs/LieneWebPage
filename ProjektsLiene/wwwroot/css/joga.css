@@ -2,11 +2,16 @@
     font-family: 'Overpass', sans-serif;
 }
 
+.big {
+    width: 100%;
+
+}
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../lib/Images/Joga/yoga.jpg);
     height: 300px;
-    width: 100%;
+    width: 90%;
+    margin:auto;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,83 +32,78 @@
 .joga-box1 {
     display: flex;
     position: relative;
-    width: 55vw;
-    height: 10vw;
+    width: 90%;
+    height: 140px;
     padding: 5px;
     margin: auto;
     margin-top: 50px;
-    border-width: 1px;
-    border-color: darkgrey;
+    border-width: 2px;
+    border-color: #9f8484;
     border-style: solid;
     text-align: left;
     border-radius: 10px;
     align-items: center;
-    justify-content:space-evenly;
-    font-size: 10vw;
+    justify-content: space-evenly;
 }
 
 .joga-box2 {
     display: flex;
     position: relative;
-    width: 55vw;
-    height: 10vw;
-    padding: 10px;
+    width: 90%;
+    height: 140px;
+    padding: 5px;
     margin: auto;
-    margin-top: 30px;
-    border-width: 1px;
-    border-color: darkgrey;
+    margin-top: 50px;
+    border-width: 2px;
+    border-color: #9f8484;
     border-style: solid;
-    text-align: center;
+    text-align: left;
     border-radius: 10px;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 10vw;
 }
+
 
 .joga-box3 {
     display: flex;
     position: relative;
-    width: 55vw;
-    height: 10vw;
-    position: relative;
-    padding: 10px;
+    width: 90%;
+    height: 140px;
+    padding: 5px;
     margin: auto;
-    margin-top: 30px;
-    border-width: 1px;
-    border-color: darkgrey;
+    margin-top: 50px;
+    border-width: 2px;
+    border-color: #9f8484;
     border-style: solid;
-    text-align: center;
+    text-align: left;
     border-radius: 10px;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 10vw;
 }
 
-    .joga-box1 h2, .joga-box2 h2, .joga-box3 h2 {
-        /*margin: 5px 75px 5px;*/
-        display: flex;
-        position: relative;
-        font-size: 2vw;
-    }
+.joga-box1 h2, .joga-box2 h2, .joga-box3 h2 {
+    display: flex;
+    position: relative;
+    font-size: 20px;
+}
 
-    .joga-box1 h5, .joga-box2 h5, .joga-box3 h5 {
-/*        margin: 5px 50px 5px;*/
-        display: flex;
-        position: relative;
-        font-size: 1.5vw;
-    }
+.joga-box1 h5, .joga-box2 h5, .joga-box3 h5 {
+    display: flex;
+    position: relative;
+    font-size: 20px;
+}
 
 
 .btn {
     display: flex;
     position: relative;
     width: fit-content;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
     margin: 1px 20px 1px 1px;
     border-radius: 5px;
-    color: whitesmoke;
+    border-color: #9f8484;
     display: inline-block;
     cursor: pointer;
+    border-width: 1px;
 }
 
 /* Atsauksmju slidebar */

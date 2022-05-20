@@ -1,103 +1,120 @@
-﻿body {
+﻿* {
+/*    padding: 0;
+    margin: 0;*/
+    box-sizing: border-box;
     font-family: 'Overpass', sans-serif;
 }
+body {
+    display: grid;
+    align-items: center;
+}
 
-.kontakti-wrap {
-    height: auto;
-    width: 80%;
+.contact-wrap {
+    position: relative;
+    width: 70%;
+    margin: auto;
     display: flex;
-    position: center;
-    border-radius: 25px;
-    margin-top:75px;
-    margin-left:100px;
+    flex-wrap: wrap;
 }
 
-.kontakti-in:nth-child(1) {
-    flex: 25%;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-    color: ghostwhite;
-    padding: 40px 30px;
-    border-radius: 15px 0px 0px 15px;
-}
-
-.kontakti-in:nth-child(2) {
-    flex: 65%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+.contact-in {
+    position:center;
     padding: 40px 30px;
 }
 
-.kontakti-in.in:nth-child(3) {
+.contact-in:nth-child(1) {
     flex: 30%;
-    padding: 0;
+    background-color: rosybrown;
+    color: #fff;
 }
 
-.kontakti-in h1 {
-    font-size: 24px;
-    color: ghostwhite;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin-bottom: 20px;
-    padding-bottom:50px;
+.contact-in:nth-child(2) {
+    flex: 20%;
+    background: #9f8484;
+    align-items:center;
 }
 
+.contact-in:nth-child(3) {
+    flex: 20%;
+    padding:0;
+}
 
-.kontakti-in h2 {
-    font-size: 15px;
-    font-weight: 300;
+.contact-in h1 {
+    font-size:20px;
+    color:#fff;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.contact-in h2 {
+    font-size: 12px;
     margin-bottom: 15px;
 }
 
-.kontakti-in h2 i {
-    font-size: 16px;
-    width: 45px;
-    height: 45px;
-    color: ghostwhite;
-    line-height: 20px;
+.contact-in h2 i {
+    font-size: 10px;
+    width:20px;
+    height:20px;
+    margin-right:10px;
+    color:#000;
+    background:#d2d4db;
+    border-radius:50px;
+    line-height:20px;
+    text-align:center;
 }
 
-.kontakti-in form {
-    width: 100%;
-    height: auto;
+.contact-in p{
+    font-size: 14px;
+    margin-bottom: 20px;
+    
 }
 
-.kontakti-in-input {
+.links {
+    color: #fff;
+}
+
+
+.contact-in form {
+    width:100%;
+    height:auto;
+}
+
+.contact-in-input {
     width: 100%;
     height: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border: 1px solid #fff;
     outline: none;
     padding-left: 5px;
     background: transparent;
     color: #fff;
-    font-size: 12px;
-    font-weight: 300;
+    font-size:12px;
     cursor: pointer;
 }
 
-    .kontakti-in-input::placeholder {
-        color: #fff;
-    }
+.contact-in-input::placeholder{
+    color: #fff;
+}
 
-.kontakti-in-textarea {
+.contact-in-textarea {
     width: 100%;
     height: 140px;
     margin-bottom: 20px;
     border: 1px solid #fff;
     outline: none;
-    padding-left: 5px;
     padding-top: 5px;
+    padding-left: 5px;
     background: transparent;
-    color: ghostwhite;
+    color: #fff;
     font-size: 12px;
-    font-weight: 300;
     cursor: pointer;
 }
 
-    .kontakti-in-textarea::placeholder {
-        color: #fff;
-    }
+.contact-in-textarea::placeholder {
+    color: #fff;
+}
 
-.kontakti-in-btn {
+.contact-in-btn {
     width: 100%;
     height: 40px;
     border: 1px solid #fff;
@@ -105,26 +122,39 @@
     background: transparent;
     color: #fff;
     font-size: 12px;
-    font-weight: 300;
     cursor: pointer;
 }
 
-.kontakti-in iframe {
+.contact-in iframe {
     width: 100%;
     height: 100%;
-    display: flex;
 }
 
-.links {
-    color: ghostwhite;
-    text-decoration: underline;
+@media only screen and (max-width:480px) {
+    .contact-in:nth-child(1) {
+        flex: 50%;
+    }
+
+    .contact-in:nth-child(2) {
+        flex: 50%;
+    }
+
+    .contact-in:nth-child(3) {
+        flex: 100%;
+    }
 }
 
-.logo {
-    width: 200px;
-    height: auto;
-    position:relative;
-    top:50px;
-    left:40%;
-}
 
+@media only screen and (max-width:360px) {
+    .contact-in:nth-child(1) {
+        flex: 50%;
+    }
+
+    .contact-in:nth-child(2) {
+        flex: 50%;
+    }
+
+    .contact-in:nth-child(3) {
+        flex: 100%;
+    }
+}
