@@ -11,7 +11,7 @@ body {
 
 .contact-wrap {
     position: relative;
-    width: 77%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -123,6 +123,7 @@ body {
     color: #fff;
     font-size: 12px;
     cursor: pointer;
+    font-family: 'Overpass', sans-serif;
 }
 
 .contact-in iframe {

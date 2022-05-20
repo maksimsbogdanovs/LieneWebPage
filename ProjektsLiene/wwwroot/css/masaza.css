@@ -132,23 +132,32 @@
 }
 
 
-    .masaza-1 h2, .masaza-2 h2, .masaza-3 h2, .masaza-4 h2, .masaza-5 h2, .masaza-6 h2 {
-        display: flex;
-        position: relative;
-        font-size: 20px;
-    }
+.masaza-1 h2, .masaza-2 h2, .masaza-3 h2, .masaza-4 h2, .masaza-5 h2, .masaza-6 h2 {
+    display: flex;
+    position: relative;
+    font-size: 23px;
+    text-align: left;
+}
 
-    .masaza-1 h5, .masaza-2 h5, .masaza-3 h5, .masaza-4 h5, .masaza-5 h5, .masaza-6 h5 {
-        display: flex;
-        position: relative;
-        font-size: 20px;
-    }
+.masaza-1 h5, .masaza-2 h5, .masaza-3 h5, .masaza-4 h5, .masaza-5 h5, .masaza-6 h5 {
+    display: flex;
+    position: relative;
+    font-size: 20px;
+ 
+}
+
+.masaza-1 h6, .masaza-2 h6, .masaza-3 h6, .masaza-4 h6, .masaza-5 h6, .masaza-6 h6 {
+    display: flex;
+    position: relative;
+    font-size: 15px;
+    text-align: center;
+}
 
 .btn {
     display: flex;
     position: relative;
     width: fit-content;
-    margin: 1px 20px 1px 1px;
+    margin: 1px 10px 1px 1px;
     border-radius: 5px;
     border-color: #9f8484;
     display: inline-block;
